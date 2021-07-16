@@ -1,0 +1,23 @@
+﻿@model int
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div> 
+
+        Hola mundo @Model.ToString()
+
+
+        @Html.ActionLink("Enlace a prueba 1","Index","Prueba1")
+        @Html.ActionLink("Enlace a prueba2","Index","Prueba2")
+    </div>
+</body>
+</html>

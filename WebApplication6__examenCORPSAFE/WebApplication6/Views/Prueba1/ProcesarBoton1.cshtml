@@ -1,0 +1,69 @@
+﻿@using WebApplication6.Models
+@model Persona
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="=" utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>View</title>
+    <link href="~/Scripts/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script type="text/javascript" src="~/Scripts/jquery-3.2.0.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button><a class="navbar-brand" href="#">My demo</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="#">Index</a></li>
+                    <li><a href="/Prueba1/Index/">Prueba1</a></li>
+                </ul>
+            </div>
+        </div> <!-- container-fluid -->
+    </nav>
+
+
+    <div class="jumbotron"><h1>Prueba 1 Formulario</h1></div>
+
+
+
+
+    <div class="container">
+        <table class="table table-striped">
+            <tr>
+                <td>Nombre</td>
+                <td>@Model.Nombre</td>
+            </tr>
+            <tr>
+                <td>Edad</td>
+                <td>@Model.Edad</td>
+            </tr>
+            <tr>
+                <td>EstadoCivil  TRUE = CASADO   FALSE=SOLTERO</td>
+                <td>@Model.EstadoCivil</td>
+            </tr>
+            <tr>
+                <td>Mes</td>
+                <td>@Model.MesAnio</td>
+            </tr>
+            <tr>
+                <td>Genero</td>
+                <td>@Model.Genero</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
